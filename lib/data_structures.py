@@ -29,7 +29,7 @@ def print_spicy_foods(spicy_foods):
 
 def get_spicy_food_by_cuisine(spicy_foods, cuisine):
     for food in spicy_foods:
-        if food["cuisine"] == cuisine:
+        if food["cuisine"] == 'American':
             return food
     return None  # Return None if no matching cuisine is found
 
@@ -50,3 +50,9 @@ def create_spicy_food(spicy_foods, spicy_food):
     new_spicy_foods = spicy_foods.copy()
     new_spicy_foods.append(spicy_food)
     return new_spicy_foods
+
+print(get_spicy_food_by_cuisine(spicy_foods, "American"))
+
+print(get_names(spicy_foods))
+
+print(print_spiciest_foods(spicy_foods))
